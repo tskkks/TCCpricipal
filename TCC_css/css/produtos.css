@@ -1,0 +1,111 @@
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    background:linear-gradient(120deg,#966261 0%, #FCA4A3 100%);
+}
+
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #cfb9bf;
+    color: rgb(255, 255, 255);
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+div{
+    width: 100%;
+}
+
+.buttons{
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.buttons li{
+    margin: 0 20px;
+}
+
+.icons{
+    width: 5%;
+    
+}
+
+nav a {
+    font-family: Arial,sans-serif;
+    text-decoration: none;
+    color:rgb(0, 255, 200)
+}
+
+nav a:hover {
+    color:#ff1180;
+}
+
+
+
+#icon_Contact{
+    height: 30px;
+    width: 30px;
+}
+
+.container{
+    margin-top: 100px;
+}
+
+#myCarousel{
+    width: 100%;
+    height: 500px
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.carrossel {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
