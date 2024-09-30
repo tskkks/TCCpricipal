@@ -41,10 +41,13 @@ div{
 }
 
 nav a {
-    font-family: Arial,sans-serif;
+    font-family:'Optima';
     text-decoration: none;
-    color:rgb(0, 255, 200)
+    text-shadow: 1px 1px 2px pink;
+    color:rgb(255, 255, 255);
+    font-size: xx-large;
 }
+
 
 nav a:hover {
     color:#ff1180;
@@ -58,54 +61,27 @@ nav a:hover {
 }
 
 .container{
-    margin-top: 100px;
+    margin-top: 250px;
+    display:flex;
 }
 
-#myCarousel{
+.card{
+    border-radius: 20px;
+    margin-left: 10px;
+    height: 400px;
+    background-color:aqua;
+    flex: 1;
+    transition: .3s all ease;
+    
+}
+
+.card:hover{
+    flex: 1.5;
+    background-color: aquamarine;
+}
+
+.card img{
     width: 100%;
-    height: 500px
-}
-
-body {
-    font-family: Arial, sans-serif;
-}
-
-.carrossel {
-    position: relative;
-    max-width: 600px;
-    margin: auto;
-    overflow: hidden;
-}
-
-.slides {
-    display: flex;
-    transition: transform 0.5s ease;
-}
-
-.slide {
-    min-width: 100%;
-    box-sizing: border-box;
-}
-
-img {
-    width: 100%;
-    display: block;
-}
-
-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(255, 255, 255, 0.7);
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-}
-
-.prev {
-    left: 10px;
-}
-
-.next {
-    right: 10px;
+    height:100%;
+    border-radius: 20px;
 }
