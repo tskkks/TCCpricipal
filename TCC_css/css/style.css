@@ -53,16 +53,22 @@ nav a:hover {
     color:#ff1180;
 }
 
+.container{
+    align-content: center;
+}
 
+main {
+    margin:auto;
+    margin-top:150px;
+    width: 90%;
+    justify-self: center;
+}
 
 #icon_Contact{
     height: 30px;
     width: 30px;
 }
 
-.container{
-    margin-top: 100px;
-}
 
 #myCarousel{
     width: 100%;
