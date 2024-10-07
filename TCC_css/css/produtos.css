@@ -8,11 +8,12 @@ header{
 }
 
 body{
-    font-family: Arial, sans-serif;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin: 0;
     padding: 0;
     background-color: #cfb9bf;
     color: rgb(255, 255, 255);
+    text-align:inherit
 }
 nav ul {
     list-style: none;
@@ -50,7 +51,7 @@ nav a {
 
 
 nav a:hover {
-    color:#ff1180;
+    color:rgb(245, 189, 228);
 }
 
 
