@@ -39,8 +39,15 @@ div{
 }
 
 .icons{
-    width: 5%;
+    width: 15%;
     
+}
+.icons a{
+    font-size:large ;
+    text-align: justify;
+}
+.icons p{
+
 }
 
 nav a {
@@ -84,4 +91,9 @@ main {
     width: 90%;
     justify-self: center;
     justify-content: space-evenly;
+}
+
+footer{
+    background:linear-gradient(120deg,#966261 0%, #FCA4A3 100%);
+
 }
