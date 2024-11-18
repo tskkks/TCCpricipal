@@ -8,12 +8,15 @@ header{
 }
 
 body{
+    position: relative;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin: 0;
     padding: 0;
-    background-color: #cfb9bf;
+    bottom: 0;
+    background-color: #e0cfd4;
     color: rgb(255, 255, 255);
     text-align:inherit
+    
 }
 nav ul {
     list-style: none;
@@ -86,7 +89,7 @@ nav a:hover {
     border-radius: 20px;
     margin-left: 10px;
     height: 400px;
-    background-color:aqua;
+    background-color:#FCA4A3;
     flex: 1;
     transition: .3s all ease;
     
@@ -109,6 +112,7 @@ footer{
     padding: 20px;
     text-align: center;
     font-family: Arial, sans-serif;
+    bottom: 0;
 }
 
 /* Container do Footer */
@@ -183,5 +187,99 @@ main {
 
 h1{
     text-align: center;
-    text-shadow: gray 3px 1px 3px;
+    text-shadow: 1px 1px 2px rgb(199, 166, 171);
+}
+
+/* Base styles remain unchanged */
+
+/* Styles for screens 720px and below */
+@media (max-width: 720px) {
+    nav ul {
+        flex-direction: column; /* Stack navigation items vertically */
+        align-items: center; /* Center items */
+    }
+
+    .buttons {
+        flex-direction: column; /* Stack buttons vertically */
+    }
+
+    .icons {
+        width: 100%; /* Make icons full width */
+        text-align: center; /* Center icons */
+    }
+
+    .card {
+        margin: 10px 0; /* Add margin for spacing */
+        height: auto; /* Allow cards to adjust height */
+    }
+
+    h3 {
+        font-size: large; /* Adjust font size for smaller screens */
+    }
+
+    h1 {
+        font-size: xx-large; /* Adjust font size for smaller screens */
+    }
+}
+
+/* Styles for screens between 721px and 1200px */
+@media (min-width: 721px) and (max-width: 1200px) {
+    nav ul {
+        flex-direction: row; /* Keep navigation items in a row */
+    }
+
+    .buttons {
+        flex-direction: row; /* Keep buttons in a row */
+    }
+
+    .card {
+        margin: 10px; /* Add margin for spacing */
+        height: 350px; /* Set a fixed height */
+    }
+
+    h3 {
+        font-size: xx-large; /* Adjust font size */
+    }
+
+    h1 {
+        font-size: xx-large; /* Adjust font size */
+    }
+}
+
+/* Styles for screens between 1201px and 1900px */
+@media (min-width: 1201px) and (max-width: 1900px) {
+    .container {
+        justify-content: space-around; /* Space out items evenly */
+    }
+
+    .card {
+        height: 400px; /* Maintain the original height */
+    }
+
+    h3 {
+        font-size: xx-large; /* Keep the font size larger */
+    }
+
+    h1 {
+        font-size: xx-large; /* Keep the font size larger */
+    }
+}
+
+/* Styles for screens above 1900px */
+@media (min-width: 1901px) {
+    .container {
+        justify-content: space-between; /* Space out items */
+    }
+
+    .card {
+        height: 450px; /* Increase height for larger screens */
+    }
+
+    h3 {
+        font-size: xx-large; /* Keep the font size larger */
+    }
+
+    h1 {
+        font-size: xxx-large; /* Increase font size for larger screens */
+    }
 }
